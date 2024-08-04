@@ -7,7 +7,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/hmdp?useSSL=false&serverTimezone=UTC
     username: root
-    password: 123456
+    password: root
   redis:
     host: localhost
     port: 6379
@@ -21,11 +21,11 @@ spring:
   jackson:
     default-property-inclusion: non_null # JSON处理时忽略非空字段
   rabbitmq:
-    host: 192.168.88.128
-    username: haopengmai
+    host: localhost
+    username: polyaxu
     password: 123456
     virtual-host: /
-    port: 15672
+    port: 5672
     listener:
       simple:
         concurrency: 10
